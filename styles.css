@@ -1,0 +1,44 @@
+body {
+    display: flex;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    min-width: 40vw;
+    background: url(images/background.jpg); 
+}
+
+.logo {
+    background: rgb(0, 0, 0, 0.5);
+    text-align: center;
+    margin-top: 100px;
+}
+
+img[src="images/logo.png"] {
+    height: 75px;
+    width: 60px;
+}
+
+footer {
+    color: white;
+    text-align: center;
+}
+
+a {
+    color: white;
+}
+
+.title {
+    font-size: 75px;
+    font-family: 'Norse Bold', 'Brush Script MT', Impact;
+    color: white;
+}
+
+.form-header {
+    background-color: gainsboro;
+    padding: 80px 80px 30px 30px; /*top right bottom left*/
+    font-weight: bold;
+}
