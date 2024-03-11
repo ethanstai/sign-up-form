@@ -1,3 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Norse Bold';
+    src: url('fonts/Norse-Bold.otf');
+}
+
 body {
     display: flex;
 }
@@ -27,7 +38,7 @@ footer {
     text-align: center;
 }
 
-a {
+.credit {
     color: white;
 }
 
@@ -41,4 +52,94 @@ a {
     background-color: gainsboro;
     padding: 80px 80px 30px 30px; /*top right bottom left*/
     font-weight: bold;
+}
+
+.main-header {
+    margin-bottom: 1em;
+}
+
+.form-title {
+    margin-left: 30px;
+    font-size: 1.5em;
+    margin-top: 10px;
+}    
+
+label {
+    position: relative;
+    display: block;
+    font-size: 10px;
+}
+
+fieldset {
+    border: none;
+    box-shadow: 5px 5px 5px lightgray;
+}
+
+.name, .contact, .password {
+    display: flex;
+}
+
+.first {
+    margin: 20px 50px 0px 30px;
+}
+
+.second {
+    margin-top: 20px;
+}
+
+.password {
+    margin-bottom: 20px;
+}
+
+button {
+    margin: 30px 30px 20px 30px;
+    background-color: lightblue;
+    padding: 5px 15px;
+    border-radius: 5px;
+    color: white;
+    font-size: 12px;
+    border: none;
+    height: 30px;
+    width: 150px;
+}
+
+button:active {
+
+}
+
+.log-in {
+    margin-left: 30px;
+}
+
+.log-in > a {
+    color: lightblue;
+}
+
+input {
+    border: 0.5px solid #E5E7EB;
+    border-radius: 7px;
+}
+
+input:focus, input:hover {
+    border: 0.5px solid blue;
+    box-shadow: 2px 2px 2px lightgray;
+}
+
+input:invalid {
+    border: 0.5px solid red;
+}
+
+input + span {
+    position: relative;
+    display: flex;
+}
+
+.pwd input[type="password"]:invalid + span::after {
+    position: absolute;
+    width: 20em;
+    font-family: inherit;
+    content: "*Passwords do not match";
+    top: 0;
+    left: 0;
+    font-size: 0.8em;
 }

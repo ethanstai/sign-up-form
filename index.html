@@ -14,25 +14,71 @@
         </div>
         <footer>
             Photo by 
-            <a href="https://unsplash.com/@leo_visions_" target="_blank">Leo_Visions</a> 
+            <a href="https://unsplash.com/@leo_visions_" target="_blank" class="credit">Leo_Visions</a> 
             on 
-            <a href="https://unsplash.com/" target="_blank">Unsplash</a>
+            <a href="https://unsplash.com/" target="_blank" class="credit">Unsplash</a>
         </footer>
     </div>
 
     <div class="right">
         <div class="form-header">
-            <p>This is not a real online service! You know you need something like this is your 
+            <p class="main-header">This is not a real online service! You know you need something like this is your 
                life to help you realize your deepest dreams. Sign up now to get started.
             </p>
             <p>
                 You <em>know</em> you want to.
             </p>
         </div>
-        
-        <form action="" method="get" class="sign-up"></form>
-        
+
+        <form action="" method="post" class="sign-up">
+            <fieldset>
+                <p class="form-title">Let's do this!</p>
+                <div class="name">
+                    <div class="first">
+                        <label for="fname">FIRST NAME</label>
+                        <input type="text" id="fname" name="fname" required>
+                    </div>
+
+                    <div class="second">
+                        <label for="lname">LAST NAME</label>
+                        <input type="text" id="lname" name="lname" required>
+                    </div>
+                </div>
+    
+                <div class="contact">
+                    <div class="first">
+                        <label for="email">EMAIL</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+
+                    <div class="second">
+                        <label for="phone">PHONE NUMBER</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                </div>
+    
+                <div class="password">
+                    <div class="first pwd">
+                        <label for="pwd">PASSWORD</label>
+                        <input type="password" id="pwd" name="pwd" required>
+                        <span></span>
+                    </div>
+
+                    <div class="second">
+                        <label for="pwd-conf">CONFIRM PASSWORD</label>
+                        <input type="password" id="pwd-conf" name="pwd-conf" required>
+                    </div>
+                </div>
+            </fieldset>
+
+            <div class="submit">
+                <button type="submit">Create Account</button>
+            </div>
         </form>
+
+        <p class="log-in">
+            Already have an account? <a href="#" target="_blank">Log in</a>
+        </p>
     </div>
 </body>
 </html>
